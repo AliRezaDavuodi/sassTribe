@@ -1,8 +1,9 @@
 .header {
   position: relative;
+  min-height: 100vh;
 
   &__navbar {
-    height: 15vh;
+    height: 10vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,9 +34,6 @@
       border-radius: 7rem;
       z-index: -1;
     }
-  }
-
-  &__nav {
   }
 
   &__list {
@@ -77,19 +75,7 @@
 
   &__content {
     position: relative;
-
-    &::after {
-      content: "";
-      width: 102%;
-      height: 25%;
-      position: absolute;
-      top: 15%;
-      left: 0;
-      background: url(../../img/Rectangle1.svg);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      z-index: -1;
-    }
+    @include bgTop;
   }
 
   &__card--box {

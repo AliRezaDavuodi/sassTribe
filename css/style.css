@@ -61,13 +61,17 @@ body {
   border-radius: 10rem !important;
   font-size: 1rem !important;
   top: 3rem;
-  left: 0;
   text-transform: uppercase !important; }
+  .link__title-left {
+    left: 0; }
+  .link__title-right {
+    right: 10rem; }
 
 .header {
-  position: relative; }
+  position: relative;
+  min-height: 100vh; }
   .header__navbar {
-    height: 15vh;
+    height: 10vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -118,7 +122,7 @@ body {
     .hero__content::after {
       content: "";
       width: 102%;
-      height: 25%;
+      height: 35%;
       position: absolute;
       top: 15%;
       left: 0;
@@ -149,3 +153,85 @@ body {
       transform: skew(-2deg) translateY(-1rem); }
     .hero .card__img {
       width: 7rem; }
+
+.features {
+  height: 100vh; }
+  .features__content {
+    position: relative; }
+    .features__content::after {
+      content: "";
+      width: 102%;
+      height: 35%;
+      position: absolute;
+      top: 15%;
+      left: 0;
+      background: url(../../img/Rectangle1.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      z-index: -1; }
+  .features__card--box {
+    padding: 5rem;
+    position: relative; }
+  .features .card {
+    min-height: 50rem;
+    background-color: #fff;
+    position: relative;
+    border: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem; }
+    .features .card img {
+      height: 100%;
+      position: absolute;
+      top: -5rem; }
+  .features__statistics {
+    width: 70%; }
+    .features__statistics--item {
+      padding: 1rem; }
+    .features__statistics--value {
+      font-family: "Montserrat", sans-seri;
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: #377dff; }
+    .features__statistics--name {
+      font-weight: 600; }
+  .features__social {
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .features__social--item {
+      width: 45%;
+      padding: 1rem;
+      background: linear-gradient(to right, #eeee, #eeee, #eeee, #ffff);
+      backdrop-filter: blur(5px);
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+      border-radius: 1rem;
+      transition: all 0.2s;
+      margin: 0.5rem;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden; }
+      .features__social--item::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #377dff;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.3s; }
+      .features__social--item span {
+        transition: all 0.1s;
+        display: inline-block;
+        margin-top: -1rem;
+        font-size: 2.5rem;
+        margin-left: 0.5rem; }
+      .features__social--item i {
+        font-size: 3rem;
+        transition: all 0.2s; }
+      .features__social--item:hover {
+        color: #fff; }
+        .features__social--item:hover i {
+          color: #fff; }
+        .features__social--item:hover::after {
+          opacity: 1; }

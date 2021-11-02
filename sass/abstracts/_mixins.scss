@@ -1,0 +1,14 @@
+@mixin bgTop {
+  &::after {
+    content: "";
+    width: 102%;
+    height: 35%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    background: url(../../img/Rectangle1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+  }
+}

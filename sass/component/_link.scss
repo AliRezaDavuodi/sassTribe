@@ -41,7 +41,13 @@
     border-radius: 10rem !important;
     font-size: 1rem !important;
     top: 3rem;
-    left: 0;
     text-transform: uppercase !important;
+
+    &-left {
+      left: 0;
+    }
+    &-right {
+      right: 10rem;
+    }
   }
 }
