@@ -1,0 +1,47 @@
+.link {
+  &,
+  &:visited,
+  &:link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-family: $montserrat;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    transition: all 0.5s ease;
+    border-radius: 1rem;
+  }
+
+  &__primary {
+    color: $ligthBlack;
+    border: 1px solid transparent;
+
+    &:hover {
+      border: 1px solid $colorPrimary;
+      color: $white;
+      background-color: $colorPrimary;
+    }
+  }
+
+  &__secondary {
+    color: $colorPrimary;
+    border: 2px solid rgba($colorPrimary, 0.8);
+
+    &:hover {
+      border: 2px solid $colorPrimary;
+      color: $white;
+      background-color: $colorPrimary;
+    }
+  }
+
+  &__title {
+    color: $colorPrimary;
+    background-color: rgba($colorPrimary, 0.3);
+    position: absolute;
+    border-radius: 10rem !important;
+    font-size: 1rem !important;
+    top: 3rem;
+    left: 0;
+    text-transform: uppercase !important;
+  }
+}

@@ -1,0 +1,21 @@
+.heading {
+  font-family: $montserrat;
+  text-transform: capitalize;
+
+  &-1 {
+    font-size: 3.5rem;
+  }
+
+  &-white {
+    color: $white;
+  }
+}
+
+.paragraph {
+  font-family: $montserrat;
+  color: rgba($ligthBlack, 0.8);
+  &-sm {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}

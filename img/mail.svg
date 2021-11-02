@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <g id="mail" transform="translate(0.242)">
+    <rect id="surface" width="96" height="96" rx="48" transform="translate(-0.242)" fill="rgba(69,121,245,0.03)"/>
+    <g id="icon">
+      <rect id="frame" width="96" height="96" transform="translate(-0.242)" fill="none"/>
+      <g id="_-Product-Icons" data-name="🔍-Product-Icons" transform="translate(23.167 28)">
+        <g id="ic_fluent_mail_24_regular">
+          <path id="_-Color" data-name="🎨-Color" d="M10.125,4h33.75a8.126,8.126,0,0,1,8.112,7.664l.013.461v23.75a8.126,8.126,0,0,1-7.664,8.112L43.875,44H10.125a8.125,8.125,0,0,1-8.112-7.664L2,35.875V12.125A8.125,8.125,0,0,1,9.664,4.013L10.125,4h0ZM48.25,17.432,27.873,28.159a1.876,1.876,0,0,1-1.506.106l-.24-.106L5.75,17.435v18.44a4.375,4.375,0,0,0,4.016,4.36l.359.015h33.75a4.375,4.375,0,0,0,4.361-4.016l.014-.359ZM43.875,7.75H10.125a4.375,4.375,0,0,0-4.36,4.016l-.014.359V13.2L27,24.381,48.25,13.2v-1.07a4.375,4.375,0,0,0-4.016-4.361Z" transform="translate(-2 -4)" fill="#377dff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

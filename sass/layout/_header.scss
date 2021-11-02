@@ -1,0 +1,117 @@
+.header {
+  &__navbar {
+    height: 15vh;
+  }
+
+  &__logo {
+    border-radius: 10rem;
+    position: relative;
+    width: 25rem;
+    max-width: 25rem;
+    text-align: center;
+    color: $white;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 20rem;
+      background-color: $colorPrimary;
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      border-radius: 7rem;
+      z-index: -1;
+    }
+  }
+
+  &__nav {
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__link {
+    &:hover {
+      border: 1px solid $colorPrimary;
+      color: $white;
+      background-color: $colorPrimary;
+    }
+  }
+}
+
+.hero {
+  height: 85vh;
+  &__card--box {
+    margin: 1rem 0;
+  }
+
+  &__btn {
+    display: flex;
+    width: 70%;
+
+    .link {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 102%;
+      height: 25%;
+      position: absolute;
+      top: 15%;
+      left: 0;
+      background: url(../../img/Rectangle1.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      z-index: -1;
+    }
+  }
+
+  &__card--box {
+    padding: 1rem;
+  }
+
+  &__cards {
+    &::after {
+      content: "";
+      width: 110%;
+      height: 25%;
+      position: absolute;
+      bottom: 0;
+      right: -2rem;
+      background: url(../../img/Rectangle30.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      z-index: -1;
+    }
+  }
+
+  .card {
+    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+    transition: all 0.3s;
+    height: 20rem;
+    border: none;
+    border-radius: 1rem;
+
+    &:hover {
+      transform: skew(-2deg) translateY(-1rem);
+    }
+
+    &__img {
+      width: 7rem;
+    }
+  }
+}
