@@ -100,4 +100,24 @@
       }
     }
   }
+
+  &__info {
+    &--item {
+      padding-right: 10rem;
+    }
+
+    &--icon {
+      i {
+        font-size: 4rem;
+        margin-right: 2rem;
+        color: $colorPrimary;
+      }
+    }
+
+    &--content {
+    }
+
+    &--detail {
+    }
+  }
 }

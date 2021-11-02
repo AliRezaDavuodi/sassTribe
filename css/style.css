@@ -235,3 +235,9 @@ body {
           color: #fff; }
         .features__social--item:hover::after {
           opacity: 1; }
+  .features__info--item {
+    padding-right: 10rem; }
+  .features__info--icon i {
+    font-size: 4rem;
+    margin-right: 2rem;
+    color: #377dff; }
