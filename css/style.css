@@ -19,13 +19,21 @@ body {
   .heading-1 {
     font-size: 3.5rem; }
   .heading-2 {
+    font-size: 3.2rem; }
+  .heading-3 {
     font-size: 3rem; }
+  .heading-4 {
+    font-size: 2.5rem; }
   .heading-white {
     color: #fff; }
 
 .paragraph {
   font-family: "Montserrat", sans-seri;
   color: rgba(39, 59, 95, 0.8); }
+  .paragraph-lg {
+    font-size: 1.8rem; }
+  .paragraph-md {
+    font-size: 1.5rem; }
   .paragraph-sm {
     font-size: 1.1rem;
     font-weight: 500; }
@@ -258,3 +266,10 @@ body {
     margin: 1rem 0; }
     .partners__brand img {
       width: 8rem; }
+
+.QA {
+  min-height: 100vh; }
+  .QA__icon img {
+    width: 3.5rem; }
+  .QA__item {
+    padding: 0 2rem; }

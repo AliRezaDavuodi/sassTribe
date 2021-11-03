@@ -7,7 +7,15 @@
   }
 
   &-2 {
+    font-size: 3.2rem;
+  }
+
+  &-3 {
     font-size: 3rem;
+  }
+
+  &-4 {
+    font-size: 2.5rem;
   }
 
   &-white {
@@ -18,6 +26,14 @@
 .paragraph {
   font-family: $montserrat;
   color: rgba($ligthBlack, 0.8);
+
+  &-lg {
+    font-size: 1.8rem;
+  }
+
+  &-md {
+    font-size: 1.5rem;
+  }
 
   &-sm {
     font-size: 1.1rem;

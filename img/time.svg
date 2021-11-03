@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="time" transform="translate(-2 -2)">
+    <g id="ic_fluent_clock_16_regular" transform="translate(2 2)">
+      <path id="_-Color" data-name="🎨-Color" d="M24.5,2A22.5,22.5,0,1,1,2,24.5,22.5,22.5,0,0,1,24.5,2Zm0,3.75A18.75,18.75,0,1,0,43.25,24.5,18.75,18.75,0,0,0,24.5,5.75Zm-1.869,7.5a1.876,1.876,0,0,1,1.845,1.538l.03.337V24.5h5.619a1.875,1.875,0,0,1,.337,3.72l-.337.03H22.631a1.876,1.876,0,0,1-1.845-1.538l-.03-.337V15.125A1.875,1.875,0,0,1,22.631,13.25Z" transform="translate(-2 -2)" fill="#377dff"/>
+    </g>
+  </g>
+</svg>
