@@ -1,0 +1,35 @@
+.footer {
+  background-color: $colorPrimary-light;
+
+  &__social {
+    &--item {
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: all 0.2s;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      i {
+        transition: all 0.5s 0.1s;
+      }
+
+      &:hover {
+        background-color: $colorPrimary;
+
+        i {
+          color: $white;
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}
+
+.copy {
+  font-size: 1.3rem;
+  color: rgba($ligthBlack, 0.5);
+}
