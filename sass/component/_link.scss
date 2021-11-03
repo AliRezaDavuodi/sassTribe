@@ -56,13 +56,14 @@
       right: 10rem;
 
       @media only screen and (max-width: 767px) {
-        left: 50%;
+        right: 40%;
         transform: translateX(-50%);
       }
     }
 
     &-center {
       left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

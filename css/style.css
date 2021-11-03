@@ -13,30 +13,61 @@ body {
   font-size: 1.8rem;
   line-height: 1.6; }
 
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 10rem 0 !important; } }
+
 .heading {
   font-family: "Montserrat", sans-seri;
   text-transform: capitalize; }
   .heading-1 {
     font-size: 3.5rem; }
+    @media only screen and (max-width: 900px) {
+      .heading-1 {
+        font-size: 3rem; } }
   .heading-2 {
     font-size: 3.2rem; }
+    @media only screen and (max-width: 900px) {
+      .heading-2 {
+        font-size: 2.8rem; } }
   .heading-3 {
     font-size: 3rem; }
+    @media only screen and (max-width: 900px) {
+      .heading-3 {
+        font-size: 2.4rem; } }
   .heading-4 {
     font-size: 2.5rem; }
+    @media only screen and (max-width: 900px) {
+      .heading-4 {
+        font-size: 2rem; } }
   .heading-white {
     color: #fff; }
+    @media only screen and (max-width: 767px) {
+      .heading-white {
+        color: #000; } }
 
 .paragraph {
   font-family: "Montserrat", sans-seri;
   color: rgba(39, 59, 95, 0.8); }
+  @media only screen and (max-width: 767px) {
+    .paragraph {
+      text-align: center; } }
   .paragraph-lg {
     font-size: 1.8rem; }
+    @media only screen and (max-width: 800px) {
+      .paragraph-lg {
+        font-size: 1.6rem; } }
   .paragraph-md {
     font-size: 1.5rem; }
+    @media only screen and (max-width: 800px) {
+      .paragraph-md {
+        font-size: 1.2rem; } }
   .paragraph-sm {
     font-size: 1.1rem;
     font-weight: 500; }
+    @media only screen and (max-width: 800px) {
+      .paragraph-sm {
+        font-size: 1rem; } }
 
 .link, .link:visited, .link:link {
   text-decoration: none;
@@ -83,10 +114,11 @@ body {
     right: 10rem; }
     @media only screen and (max-width: 767px) {
       .link__title-right {
-        left: 50%;
+        right: 40%;
         transform: translateX(-50%); } }
   .link__title-center {
-    left: 50%; }
+    left: 50%;
+    transform: translateX(-50%); }
 
 .features {
   min-height: 100vh; }
@@ -107,6 +139,12 @@ body {
         .features__content::after {
           opacity: 0;
           visibility: hidden; } }
+    @media only screen and (max-width: 767px) {
+      .features__content {
+        text-align: center; } }
+    @media only screen and (max-width: 767px) {
+      .features__content--img {
+        order: -1; } }
   .features__card--box {
     padding: 5rem;
     position: relative; }
@@ -117,6 +155,9 @@ body {
     border: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     border-radius: 1rem; }
+    @media only screen and (max-width: 767px) {
+      .features .card {
+        order: -1; } }
     .features .card img {
       height: 100%;
       position: absolute;
@@ -173,8 +214,15 @@ body {
           color: #fff; }
         .features__social--item:hover::after {
           opacity: 1; }
+  @media only screen and (max-width: 767px) {
+    .features__info {
+      padding: 1rem 5rem; } }
   .features__info--item {
     padding-right: 10rem; }
+    @media only screen and (max-width: 767px) {
+      .features__info--item {
+        text-align: center;
+        padding: 0; } }
   .features__info--icon i {
     font-size: 4rem;
     margin-right: 2rem;
@@ -341,23 +389,23 @@ body {
         justify-content: center; } }
     .hero__btn .link:not(:last-child) {
       margin-right: 1rem; }
+  .hero__container::after {
+    content: "";
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    background: url(../../img/Rectangle1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1; }
+    @media only screen and (max-width: 767px) {
+      .hero__container::after {
+        opacity: 0;
+        visibility: hidden; } }
   .hero__content {
     position: relative; }
-    .hero__content::after {
-      content: "";
-      width: 100%;
-      height: 35%;
-      position: absolute;
-      top: 15%;
-      left: 0;
-      background: url(../../img/Rectangle1.svg);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      z-index: -1; }
-      @media only screen and (max-width: 767px) {
-        .hero__content::after {
-          opacity: 0;
-          visibility: hidden; } }
   .hero__card--box {
     padding: 1rem; }
   .hero__cards::after {
@@ -400,6 +448,9 @@ body {
 
 .QA {
   min-height: 100vh; }
+  @media only screen and (max-width: 767px) {
+    .QA {
+      text-align: center; } }
   .QA__icon img {
     width: 3.5rem; }
   .QA__item {

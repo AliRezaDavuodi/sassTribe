@@ -4,9 +4,16 @@
   &__content {
     position: relative;
     @include bgTop;
-  }
 
-  &__card {
+    @media only screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    &--img {
+      @media only screen and (max-width: 767px) {
+        order: -1;
+      }
+    }
   }
 
   &__card--box {
@@ -21,6 +28,11 @@
     border: none;
     box-shadow: 0 1rem 2rem rgba(#000, 0.2);
     border-radius: 1rem;
+
+    @media only screen and (max-width: 767px) {
+      order: -1;
+    }
+
     img {
       height: 100%;
       position: absolute;
@@ -102,8 +114,17 @@
   }
 
   &__info {
+    @media only screen and (max-width: 767px) {
+      padding: 1rem 5rem;
+    }
+
     &--item {
       padding-right: 10rem;
+
+      @media only screen and (max-width: 767px) {
+        text-align: center;
+        padding: 0;
+      }
     }
 
     &--icon {

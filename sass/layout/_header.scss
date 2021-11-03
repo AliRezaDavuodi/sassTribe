@@ -111,6 +111,7 @@
 
   &__list {
     transition: all 1s;
+
     @media only screen and (max-width: 800px) {
       background-color: $colorPrimary;
       display: flex;
@@ -194,9 +195,12 @@
     }
   }
 
+  &__container {
+    @include bgTop;
+  }
+
   &__content {
     position: relative;
-    @include bgTop;
   }
 
   &__card--box {
