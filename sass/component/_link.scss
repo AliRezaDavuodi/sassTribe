@@ -35,12 +35,13 @@
   }
 
   &__title {
+    padding: 0.2rem 0.5rem !important;
     color: $colorPrimary;
     background-color: rgba($colorPrimary, 0.3);
     position: absolute;
     border-radius: 10rem !important;
-    font-size: 1rem !important;
-    top: 3rem;
+    font-size: 0.8rem !important;
+    top: 5rem;
     text-transform: uppercase !important;
 
     &-left {
@@ -48,6 +49,10 @@
     }
     &-right {
       right: 10rem;
+    }
+
+    &-center {
+      left: 50%;
     }
   }
 }

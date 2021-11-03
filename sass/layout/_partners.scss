@@ -1,0 +1,25 @@
+.partners {
+  min-height: 50vh;
+
+  &__brands {
+    background-image: linear-gradient(
+      to right,
+      #fff,
+      rgba($colorPrimary, 0.1),
+      rgba($colorPrimary, 0.2),
+      rgba($colorPrimary, 0.1),
+      #fff
+    );
+  }
+
+  &__brand {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 1rem 0;
+
+    img {
+      width: 8rem;
+    }
+  }
+}
