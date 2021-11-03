@@ -1,5 +1,6 @@
 .footer {
   background-color: $colorPrimary-light;
+  z-index: -2;
 
   &__social {
     &--item {

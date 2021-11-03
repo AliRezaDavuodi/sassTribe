@@ -1,9 +1,8 @@
 .header {
   position: relative;
-  min-height: 100vh;
 
   &__navbar {
-    height: 10vh;
+    min-height: 10vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,6 +12,133 @@
     backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+
+  &__items {
+    @media only screen and (max-width: 800px) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 2rem;
+        right: 4rem;
+        cursor: pointer;
+        width: 4rem;
+        height: 4rem;
+        background-color: $colorPrimary;
+        border-radius: 50%;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 10;
+
+        @media only screen and (max-width: 800px) {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        /* &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          transition: all 0.5s;
+          background-image: linear-gradient(
+            to right,
+            $colorPrimary,
+            $colorPrimary
+          );
+          z-index: -1;
+        } */
+      }
+
+      .humber {
+        width: 2.1rem;
+        height: 2px;
+        background-color: #000;
+        position: relative;
+        display: block;
+        transition: all 0.1s 0.2s;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 2.1rem;
+          height: 2px;
+          background-color: #000;
+          position: absolute;
+          left: 0;
+          top: -0.6rem;
+          transition: all 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        }
+        &::before {
+          content: "";
+          display: block;
+          width: 2.1rem;
+          height: 2px;
+          background-color: #000;
+          position: absolute;
+          left: 0;
+          top: 0.6rem;
+          transition: all 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        }
+      }
+
+      .input-humber:checked ~ .header__nav {
+        .header__list {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      .input-humber:checked + label {
+        &::before {
+          transform: scale(80);
+        }
+        .humber {
+          background-color: transparent;
+          transition: all 0.5s;
+
+          &::after {
+            transform: rotate(-135deg);
+            top: 0;
+          }
+
+          &::before {
+            transform: rotate(135deg);
+            top: 0;
+          }
+        }
+      }
+    }
+
+    &__nav {
+    }
+  }
+
+  &__list {
+    transition: all 1s;
+    @media only screen and (max-width: 800px) {
+      background-color: $colorPrimary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__item {
+    z-index: 10;
   }
 
   &__logo {
@@ -25,7 +151,7 @@
 
     &::before {
       content: "";
-      width: 100%;
+      width: 105%;
       height: 20rem;
       background-color: $colorPrimary;
       position: absolute;
@@ -56,7 +182,7 @@
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   padding: 15rem 0;
   &__card--box {
     margin: 1rem 0;
@@ -85,7 +211,7 @@
   &__cards {
     &::after {
       content: "";
-      width: 110%;
+      width: 100%;
       height: 25%;
       position: absolute;
       bottom: 0;
