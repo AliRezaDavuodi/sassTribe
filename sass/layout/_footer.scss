@@ -2,7 +2,14 @@
   background-color: $colorPrimary-light;
   z-index: -2;
 
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+  }
+
   &__social {
+    @media only screen and (max-width: 767px) {
+      justify-content: center;
+    }
     &--item {
       width: 3rem;
       height: 3rem;

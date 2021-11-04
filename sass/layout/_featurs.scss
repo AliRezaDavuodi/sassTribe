@@ -1,6 +1,11 @@
 .features {
   min-height: 100vh;
 
+  &__heading {
+    padding-left: 5rem;
+    margin-top: 4rem;
+  }
+
   &__content {
     position: relative;
     @include bgTop;
@@ -16,27 +21,21 @@
     }
   }
 
+  &__card--img {
+    transform: scale(1.1);
+    margin-bottom: 3rem;
+  }
+
   &__card--box {
     padding: 5rem;
     position: relative;
+    border: none;
 
     .card {
-      height: 10rem;
-      background-color: $white;
-      position: relative;
-      border: none;
+      border: 0;
       box-shadow: 0 1rem 2rem rgba(#000, 0.2);
       border-radius: 1rem;
-
-      @media only screen and (max-width: 767px) {
-        order: -1;
-      }
-    }
-
-    img {
-      width: 100%;
-      position: absolute;
-      top: -5rem;
+      position: relative;
     }
   }
 
@@ -133,12 +132,6 @@
         margin-right: 2rem;
         color: $colorPrimary;
       }
-    }
-
-    &--content {
-    }
-
-    &--detail {
     }
   }
 }

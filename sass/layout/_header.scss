@@ -169,7 +169,7 @@
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 15rem 0;
 
   @media only screen and (max-width: 767px) {
@@ -242,6 +242,10 @@
 
     &__img {
       width: 7rem;
+    }
+
+    &-title {
+      font-size: 1.5rem;
     }
   }
 }

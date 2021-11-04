@@ -12,6 +12,10 @@
     border-radius: 1rem;
   }
 
+  i {
+    margin-left: 0.5rem;
+  }
+
   &__primary {
     color: $ligthBlack;
     border: 1px solid transparent;
@@ -66,4 +70,9 @@
       transform: translateX(-50%);
     }
   }
+}
+
+.active {
+  color: $white;
+  background-color: $ligthBlack;
 }

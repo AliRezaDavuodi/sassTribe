@@ -15,8 +15,7 @@ body {
   box-sizing: border-box;
   font-size: 1.8rem;
   line-height: 1.6;
-  overflow-x: hidden;
-  background-color: #fff; }
+  overflow-x: hidden; }
 
 @media only screen and (max-width: 767px) {
   .container {
@@ -98,45 +97,15 @@ body {
     transform: scale(0);
     border-radius: 1px; }
 
-.darkmode {
-  width: 5rem;
-  height: 5rem;
-  position: fixed;
-  font-size: 3.5rem;
-  left: 3rem;
-  bottom: 3rem;
-  background-color: #377dff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  z-index: 20;
-  align-items: center;
-  transition: all 0.3s; }
-  .darkmode i {
-    cursor: pointer; }
-
-.animatedDark {
-  animation: moveUp 1s ease forwards; }
-
-@keyframes moveUp {
-  0% {
-    transform: translate(0, 0) scale(1) rotate(0); }
-  20% {
-    transform: translate(0, -10rem) scale(1) rotate(0); }
-  40% {
-    transform: translate(0, -10rem) scale(1.4) rotate(45deg); }
-  60% {
-    transform: translate(0, -10rem) scale(1.4) rotate(-45deg); }
-  80% {
-    transform: translate(0, -10rem) scale(1.4) rotate(0deg); }
-  100% {
-    transform: translate(0, 0) scale(1) rotate(0deg); } }
-
 .dark {
-  filter: invert(1) hue-rotate(180deg); }
+  background: #2d2f33 !important;
+  color: #fff !important; }
 
-.nodark {
-  filter: invert(1) hue-rotate(180deg); }
+.textdark {
+  color: #fff !important; }
+
+.branddark {
+  background: linear-gradient(to right, #2d2f33, rgba(45, 47, 51, 0.2), #2d2f33) !important; }
 
 .link, .link:visited, .link:link {
   text-decoration: none;
@@ -263,7 +232,7 @@ body {
     display: inline-block;
     border-radius: 0.6rem;
     transition: all 0.3s;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
     font-size: 1.8rem;
     font-family: "Montserrat", sans-seri;
     text-transform: capitalize; }
