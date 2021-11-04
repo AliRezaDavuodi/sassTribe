@@ -153,7 +153,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 2rem; }
   .form__form {
     width: 50%; }
   .form__group {
@@ -174,9 +175,11 @@ body {
     font-family: "Montserrat", sans-seri;
     color: #377dff;
     background-color: #e8effc;
-    border-radius: 0.3rem; }
+    border-radius: 0.3rem;
+    transition: all 0.3s; }
     .form__input:focus {
-      outline: 0; }
+      outline: 0;
+      transform: scale(1.1); }
   .form__input:focus + .form__label,
   .form__input:valid + .form__label {
     font-size: 1.3rem;
@@ -203,13 +206,13 @@ body {
     margin-left: 1rem;
     cursor: pointer; }
   .form__btn {
-    margin-top: 2rem;
+    margin: 2rem 0;
     border: none;
     background-color: #377dff;
     width: 100%;
     color: #fff;
     padding: 1rem 3rem;
-    display: block;
+    display: inline-block;
     border-radius: 0.6rem;
     transition: all 0.3s;
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);

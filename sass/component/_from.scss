@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 2rem;
 
   &__form {
     width: 50%;
@@ -34,9 +35,11 @@
     color: $colorPrimary;
     background-color: $colorPrimary-light2;
     border-radius: 0.3rem;
+    transition: all 0.3s;
 
     &:focus {
       outline: 0;
+      transform: scale(1.1);
     }
   }
 
@@ -78,13 +81,13 @@
   }
 
   &__btn {
-    margin-top: 2rem;
+    margin: 2rem 0;
     border: none;
     background-color: $colorPrimary;
     width: 100%;
     color: $white;
     padding: 1rem 3rem;
-    display: block;
+    display: inline-block;
     border-radius: 0.6rem;
     transition: all 0.3s;
     box-shadow: 0 1rem 4rem rgba(#000, 0.5);
