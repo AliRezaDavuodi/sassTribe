@@ -220,6 +220,27 @@ body {
     transform: scale(0);
     border-radius: 1px; }
 
+.pageController:link, .pageController:visited {
+  text-decoration: none;
+  position: absolute;
+  top: 2rem;
+  transition: all 0.2s; }
+
+.pageController:hover i {
+  color: #273b5f;
+  transform: rotate(360deg); }
+
+.pageController i {
+  font-size: 4rem;
+  cursor: pointer;
+  transition: all 0.2s; }
+
+.pageController__close {
+  left: 15rem; }
+
+.pageController__back {
+  right: 15rem; }
+
 .features {
   min-height: 100vh; }
   .features__content {

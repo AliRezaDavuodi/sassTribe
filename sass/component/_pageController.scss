@@ -1,0 +1,29 @@
+.pageController {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    position: absolute;
+    top: 2rem;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    i {
+      color: $ligthBlack;
+      transform: rotate(360deg);
+    }
+  }
+
+  i {
+    font-size: 4rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  &__close {
+    left: 15rem;
+  }
+
+  &__back {
+    right: 15rem;
+  }
+}
