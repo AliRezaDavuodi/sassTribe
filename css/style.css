@@ -212,7 +212,10 @@ body {
     display: block;
     border-radius: 0.6rem;
     transition: all 0.3s;
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-seri;
+    text-transform: capitalize; }
     .form__btn:focus {
       outline: none; }
     .form__btn:hover {
@@ -243,10 +246,10 @@ body {
   transition: all 0.2s; }
 
 .pageController__close {
-  left: 15rem; }
+  right: 15rem; }
 
 .pageController__back {
-  right: 15rem; }
+  left: 15rem; }
 
 .features {
   min-height: 100vh; }
@@ -589,22 +592,22 @@ body {
   .QA__item {
     padding: 0 2rem; }
 
-.signin {
+.authentication {
   min-height: 100vh; }
   @media only screen and (max-width: 767px) {
-    .signin__content--img {
+    .authentication__content--img {
       order: -1; } }
-  .signin__card--box {
+  .authentication__card--box {
     padding: 5rem;
     position: relative; }
-  .signin__card {
+  .authentication__card {
     min-height: 40rem;
     background-color: #fff;
     position: relative;
     border: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     border-radius: 1rem; }
-  .signin__img {
+  .authentication__img {
     width: 100%;
     height: 110%;
     position: absolute;

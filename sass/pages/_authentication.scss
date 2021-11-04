@@ -1,9 +1,7 @@
-.signin {
+.authentication {
   min-height: 100vh;
 
   &__content {
-    &--info {
-    }
     &--img {
       @media only screen and (max-width: 767px) {
         order: -1;
