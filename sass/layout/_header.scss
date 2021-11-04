@@ -78,10 +78,8 @@
       }
 
       .input-humber:checked ~ .header__nav {
-        .header__list {
-          opacity: 1;
-          visibility: visible;
-        }
+        opacity: 1;
+        visibility: visible;
       }
 
       .input-humber:checked + label {
@@ -104,8 +102,13 @@
         }
       }
     }
+  }
 
-    &__nav {
+  &__nav {
+    transition: all 0.5s;
+    @media only screen and (max-width: 800px) {
+      opacity: 0;
+      visibility: hidden;
     }
   }
 
@@ -118,8 +121,6 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      opacity: 0;
-      visibility: hidden;
     }
   }
 
@@ -205,6 +206,7 @@
 
   &__card--box {
     padding: 1rem;
+    min-height: 15rem;
   }
 
   &__cards {
@@ -220,7 +222,7 @@
       background-size: 100%;
       z-index: -1;
 
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 900px) {
         opacity: 0;
         visibility: hidden;
       }

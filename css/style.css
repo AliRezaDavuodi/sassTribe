@@ -7,11 +7,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
   font-size: 1.8rem;
-  line-height: 1.6; }
+  line-height: 1.6;
+  overflow-x: hidden; }
 
 @media only screen and (max-width: 767px) {
   .container {
@@ -42,7 +46,7 @@ body {
         font-size: 2rem; } }
   .heading-white {
     color: #fff; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 900px) {
       .heading-white {
         color: #000; } }
 
@@ -120,6 +124,102 @@ body {
     left: 50%;
     transform: translateX(-50%); }
 
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .form__form {
+    width: 50%; }
+  .form__group {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    position: relative; }
+    .form__group:not(:last-child) {
+      margin-bottom: 1rem; }
+    .form__group--check {
+      display: flex;
+      align-items: center; }
+  .form__input {
+    width: 100%;
+    border: 0;
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-seri;
+    color: #377dff;
+    background-color: #e8effc;
+    border-radius: 0.3rem; }
+    .form__input:focus {
+      outline: 0; }
+  .form__input:focus + .form__label,
+  .form__input:valid + .form__label {
+    font-size: 1.3rem;
+    top: 0;
+    color: #273b5f; }
+  .form__label {
+    position: absolute;
+    font-size: 1.6rem;
+    color: #377dff;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-seri;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    transition: all 0.5s; }
+  .form__input--checkbox {
+    display: none; }
+    .form__input--checkbox:checked + .myCheck::after {
+      transform: scale(1); }
+  .form__label--checkbox {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-seri;
+    color: #273b5f;
+    margin-left: 1rem;
+    cursor: pointer; }
+  .form__btn {
+    margin-top: 2rem;
+    border: none;
+    background-color: #377dff;
+    width: 100%;
+    color: #fff;
+    padding: 1rem 3rem;
+    display: block;
+    border-radius: 0.6rem;
+    transition: all 0.3s;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5); }
+    .form__btn:focus {
+      outline: none; }
+    .form__btn:hover {
+      transform: translateY(-1rem); }
+    .form__btn:focus {
+      transform: translateY(-0.5rem); }
+
+.myCheck {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #273b5f;
+  position: relative;
+  padding: 0.1rem;
+  overflow: hidden; }
+  .myCheck::after {
+    content: "\2713";
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #377dff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: scale(0);
+    border-radius: 1px; }
+
 .features {
   min-height: 100vh; }
   .features__content {
@@ -135,7 +235,7 @@ body {
       background-repeat: no-repeat;
       background-size: 100%;
       z-index: -1; }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 900px) {
         .features__content::after {
           opacity: 0;
           visibility: hidden; } }
@@ -148,18 +248,18 @@ body {
   .features__card--box {
     padding: 5rem;
     position: relative; }
-  .features .card {
-    min-height: 50rem;
-    background-color: #fff;
-    position: relative;
-    border: none;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    border-radius: 1rem; }
-    @media only screen and (max-width: 767px) {
-      .features .card {
-        order: -1; } }
-    .features .card img {
-      height: 100%;
+    .features__card--box .card {
+      height: 10rem;
+      background-color: #fff;
+      position: relative;
+      border: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      border-radius: 1rem; }
+      @media only screen and (max-width: 767px) {
+        .features__card--box .card {
+          order: -1; } }
+    .features__card--box img {
+      width: 100%;
       position: absolute;
       top: -5rem; }
   .features__statistics {
@@ -319,7 +419,7 @@ body {
           left: 0;
           top: 0.6rem;
           transition: all 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
-      .header__items .input-humber:checked ~ .header__nav .header__list {
+      .header__items .input-humber:checked ~ .header__nav {
         opacity: 1;
         visibility: visible; }
       .header__items .input-humber:checked + label::before {
@@ -333,6 +433,12 @@ body {
         .header__items .input-humber:checked + label .humber::before {
           transform: rotate(135deg);
           top: 0; } }
+  .header__nav {
+    transition: all 0.5s; }
+    @media only screen and (max-width: 800px) {
+      .header__nav {
+        opacity: 0;
+        visibility: hidden; } }
   .header__list {
     transition: all 1s; }
     @media only screen and (max-width: 800px) {
@@ -341,9 +447,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        opacity: 0;
-        visibility: hidden; } }
+        flex-direction: column; } }
   .header__item {
     z-index: 10; }
   .header__logo {
@@ -400,14 +504,15 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: -1; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 900px) {
       .hero__container::after {
         opacity: 0;
         visibility: hidden; } }
   .hero__content {
     position: relative; }
   .hero__card--box {
-    padding: 1rem; }
+    padding: 1rem;
+    min-height: 15rem; }
   .hero__cards::after {
     content: "";
     width: 100%;
@@ -419,7 +524,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: -1; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 900px) {
       .hero__cards::after {
         opacity: 0;
         visibility: hidden; } }
@@ -455,3 +560,24 @@ body {
     width: 3.5rem; }
   .QA__item {
     padding: 0 2rem; }
+
+.signin {
+  min-height: 100vh; }
+  @media only screen and (max-width: 767px) {
+    .signin__content--img {
+      order: -1; } }
+  .signin__card--box {
+    padding: 5rem;
+    position: relative; }
+  .signin__card {
+    min-height: 40rem;
+    background-color: #fff;
+    position: relative;
+    border: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem; }
+  .signin__img {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: -4rem; }

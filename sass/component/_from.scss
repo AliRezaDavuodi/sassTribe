@@ -1,0 +1,131 @@
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__form {
+    width: 50%;
+  }
+
+  &__group {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &--check {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: 0;
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-family: $montserrat;
+    color: $colorPrimary;
+    background-color: $colorPrimary-light2;
+    border-radius: 0.3rem;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__input:focus + &__label,
+  &__input:valid + &__label {
+    font-size: 1.3rem;
+    top: 0;
+    color: $ligthBlack;
+  }
+
+  &__label {
+    position: absolute;
+    font-size: 1.6rem;
+    color: $colorPrimary;
+    font-size: 2rem;
+    font-family: $montserrat;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    transition: all 0.5s;
+  }
+
+  &__input--checkbox {
+    display: none;
+
+    &:checked + .myCheck {
+      &::after {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &__label--checkbox {
+    font-size: 2rem;
+    font-family: $montserrat;
+    color: $ligthBlack;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+
+  &__btn {
+    margin-top: 2rem;
+    border: none;
+    background-color: $colorPrimary;
+    width: 100%;
+    color: $white;
+    padding: 1rem 3rem;
+    display: block;
+    border-radius: 0.6rem;
+    transition: all 0.3s;
+    box-shadow: 0 1rem 4rem rgba(#000, 0.5);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      transform: translateY(-1rem);
+    }
+
+    &:focus {
+      transform: translateY(-0.5rem);
+    }
+  }
+}
+
+.myCheck {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid $ligthBlack;
+  position: relative;
+  padding: 0.1rem;
+  overflow: hidden;
+
+  &::after {
+    content: "\2713";
+    color: $white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $colorPrimary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: scale(0);
+    border-radius: 1px;
+  }
+}

@@ -1,0 +1,34 @@
+.signin {
+  min-height: 100vh;
+
+  &__content {
+    &--info {
+    }
+    &--img {
+      @media only screen and (max-width: 767px) {
+        order: -1;
+      }
+    }
+  }
+
+  &__card--box {
+    padding: 5rem;
+    position: relative;
+  }
+
+  &__card {
+    min-height: 40rem;
+    background-color: $white;
+    position: relative;
+    border: none;
+    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+    border-radius: 1rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: -4rem;
+  }
+}

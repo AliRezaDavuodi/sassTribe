@@ -19,22 +19,22 @@
   &__card--box {
     padding: 5rem;
     position: relative;
-  }
 
-  .card {
-    min-height: 50rem;
-    background-color: $white;
-    position: relative;
-    border: none;
-    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
-    border-radius: 1rem;
+    .card {
+      height: 10rem;
+      background-color: $white;
+      position: relative;
+      border: none;
+      box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+      border-radius: 1rem;
 
-    @media only screen and (max-width: 767px) {
-      order: -1;
+      @media only screen and (max-width: 767px) {
+        order: -1;
+      }
     }
 
     img {
-      height: 100%;
+      width: 100%;
       position: absolute;
       top: -5rem;
     }
