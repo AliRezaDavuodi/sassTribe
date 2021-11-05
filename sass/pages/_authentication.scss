@@ -3,7 +3,7 @@
 
   &__content {
     &--img {
-      @media only screen and (max-width: 767px) {
+      @include respond(sm) {
         order: -1;
       }
     }
@@ -19,7 +19,7 @@
     background-color: $white;
     position: relative;
     border: none;
-    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+    box-shadow: 0 1rem 2rem rgba($dark, 0.2);
     border-radius: 1rem;
   }
 

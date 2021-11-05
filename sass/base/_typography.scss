@@ -5,7 +5,7 @@
   &-1 {
     font-size: 3.2rem;
 
-    @media only screen and (max-width: 992px) {
+    @include respond(xl) {
       font-size: 3rem;
     }
   }
@@ -13,7 +13,7 @@
   &-2 {
     font-size: 3.2rem;
 
-    @media only screen and (max-width: 992px) {
+    @include respond(xl) {
       font-size: 2.8rem;
     }
   }
@@ -21,7 +21,7 @@
   &-3 {
     font-size: 3rem;
 
-    @media only screen and (max-width: 992px) {
+    @include respond(xl) {
       font-size: 2.4rem;
     }
   }
@@ -29,15 +29,15 @@
   &-4 {
     font-size: 2.5rem;
 
-    @media only screen and (max-width: 992px) {
+    @include respond(xl) {
       font-size: 2rem;
     }
   }
 
   &-white {
     color: $white;
-    @media only screen and (max-width: 992px) {
-      color: #000;
+    @include respond(xl) {
+      font-size: $dark;
     }
   }
 }
@@ -46,14 +46,14 @@
   font-family: $montserrat;
   color: rgba($ligthBlack, 0.8);
 
-  @media only screen and (max-width: 767px) {
+  @include respond(sm) {
     text-align: center;
   }
 
   &-lg {
     font-size: 1.8rem;
 
-    @media only screen and (max-width: 800px) {
+    @include respond(md) {
       font-size: 1.6rem;
     }
   }
@@ -61,7 +61,7 @@
   &-md {
     font-size: 1.5rem;
 
-    @media only screen and (max-width: 800px) {
+    @include respond(md) {
       font-size: 1.2rem;
     }
   }
@@ -70,7 +70,7 @@
     font-size: 1.1rem;
     font-weight: 500;
 
-    @media only screen and (max-width: 800px) {
+    @include respond(md) {
       font-size: 1rem;
     }
   }

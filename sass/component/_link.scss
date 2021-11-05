@@ -51,7 +51,7 @@
     &-left {
       left: 0;
 
-      @media only screen and (max-width: 767px) {
+      @include respond(sm) {
         left: 50%;
         transform: translateX(-50%);
       }
@@ -59,7 +59,7 @@
     &-right {
       right: 10rem;
 
-      @media only screen and (max-width: 767px) {
+      @include respond(sm) {
         right: 40%;
         transform: translateX(-50%);
       }

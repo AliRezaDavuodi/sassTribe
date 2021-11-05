@@ -2,12 +2,12 @@
   background-color: $colorPrimary-light;
   z-index: -2;
 
-  @media only screen and (max-width: 767px) {
+  @include respond(sm) {
     text-align: center;
   }
 
   &__social {
-    @media only screen and (max-width: 767px) {
+    @include respond(sm) {
       justify-content: center;
     }
     &--item {

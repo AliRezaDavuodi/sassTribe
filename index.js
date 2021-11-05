@@ -1,13 +1,29 @@
-const dark = document.querySelector(".darkmode");
+const darkBtn = document.querySelector('.darkmode');
+let darkMode = localStorage.getItem('darkmode');
 
-dark.addEventListener("click", () => {
-  document.documentElement.classList.toggle("dark");
+const activeDarkMode = () => {
+  document.documentElement.classList.add('dark');
   document
-    .querySelectorAll("img")
-    .forEach((img) => img.classList.toggle("nodark"));
-  check();
-});
+    .querySelectorAll('img')
+    .forEach((img) => img.classList.add('nodark'));
+  localStorage.setItem('darkmode', 'active');
+};
 
-setInterval(() => {
-  document.querySelector(".darkmode").classList.toggle("animatedDark");
-}, 3000);
+const deactiveDarkMode = () => {
+  document.documentElement.classList.remove('dark');
+  document
+    .querySelectorAll('img')
+    .forEach((img) => img.classList.remove('nodark'));
+  localStorage.setItem('darkmode', 'deactive');
+};
+
+darkMode === 'active' ? activeDarkMode() : null;
+
+darkBtn.addEventListener('click', () => {
+  darkMode = localStorage.getItem('darkmode');
+  if (darkMode === 'active') {
+    deactiveDarkMode();
+  } else {
+    activeDarkMode();
+  }
+});
