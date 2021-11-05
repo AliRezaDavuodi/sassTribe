@@ -13,9 +13,8 @@
   }
 
   &__brand {
+    @include flex;
     justify-content: center;
-    align-items: center;
-    display: flex;
     margin: 1rem 0;
 
     img {

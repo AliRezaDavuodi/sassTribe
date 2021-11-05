@@ -27,3 +27,8 @@ darkBtn.addEventListener('click', () => {
     activeDarkMode();
   }
 });
+
+// set animation for btn dark mode
+setInterval(() => {
+  darkBtn.classList.toggle('animatedBtn');
+}, 3000);

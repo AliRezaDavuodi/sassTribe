@@ -1,5 +1,4 @@
 .heading {
-  font-family: $montserrat;
   text-transform: capitalize;
 
   &-1 {
@@ -43,7 +42,6 @@
 }
 
 .paragraph {
-  font-family: $montserrat;
   color: rgba($ligthBlack, 0.8);
 
   @include respond(sm) {

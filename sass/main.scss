@@ -1,21 +1,22 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-@import "base/animation";
-@import "base/base";
-@import "base/typography";
-@import "base/utilitis";
+@import 'base/animation';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilitis';
 
-@import "component/customCheckbox";
-@import "component/dark";
-@import "component/link";
-@import "component/from";
-@import "component/pageController";
+@import 'component/customCheckbox';
+@import 'component/dark';
+@import 'component/link';
+@import 'component/from';
+@import 'component/pageController';
 
-@import "layout/featurs";
-@import "layout/footer";
-@import "layout/header";
-@import "layout/partners";
-@import "layout/q&a";
+@import 'layout/featurs';
+@import 'layout/footer';
+@import 'layout/hero';
+@import 'layout/navbar';
+@import 'layout/partners';
+@import 'layout/q&a';
 
-@import "pages/authentication";
+@import 'pages/authentication';

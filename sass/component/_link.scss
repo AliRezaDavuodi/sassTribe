@@ -5,7 +5,6 @@
     text-decoration: none;
     text-transform: capitalize;
     font-size: 1.6rem;
-    font-family: $montserrat;
     display: inline-block;
     padding: 1rem 1.5rem;
     transition: all 0.5s ease;
@@ -42,9 +41,9 @@
     padding: 0.2rem 0.5rem !important;
     color: $colorPrimary;
     background-color: rgba($colorPrimary, 0.3);
-    position: absolute;
     border-radius: 10rem !important;
     font-size: 0.8rem !important;
+    position: absolute;
     top: 5rem;
     text-transform: uppercase !important;
 
@@ -67,12 +66,8 @@
 
     &-center {
       left: 50%;
+      top: 0rem;
       transform: translateX(-50%);
     }
   }
-}
-
-.active {
-  color: $white;
-  background-color: $ligthBlack;
 }

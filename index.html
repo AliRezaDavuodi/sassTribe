@@ -19,6 +19,14 @@
 
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+
+    <!-- wow cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+
+  <!-- animated cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
     <!-- my styleSheet -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -30,19 +38,20 @@
     <div class="darkmode"><i class="fas fa-moon"></i></div>
 
 
-    <header class="header container-fluid">
-        <section class="header__navbar py-5">
+    <header class="header container-fluid" >
+        <section class="header__navbar py-5 ">
             <div class="container-fluid">
 
-            <div class="row">
+            <div class="row  wow animate__fadeInDown"  data-wow-duration="2s"
+            data-wow-offset="70">
 
 
                 <div class="col-md-4 col-sm-12 d-flex">
-                    <div class="header__logo display-4" >
+                    <div class="header__logo display-4 " >
                         SassTribe
                     </div>
                 </div>
-                <div class="col-md-8 col-sm-12 ">
+                <div class="col-md-8 col-sm-12">
 
                     <div class="header__items">
 
@@ -73,7 +82,8 @@
     <div class="container hero__container position-relative">
         <a href="#" class="link link__title link__title-left">welcome</a>
             <div class="row hero__content">
-                <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center wow animate__fadeInLeft "  data-wow-duration="2s"
+                data-wow-offset="70">
                     <h1 class="heading heading-white heading-1 mb-5">Ready to help you in <br> your projects!</h1>
                     <p class="paragraph mt-5">
                         Our sales team will get in touch to better <br> understand your needs, and will help you <br> with the sign-up process
@@ -87,7 +97,8 @@
                 </div>
                 <div class="col-sm-12 col-md-6">
 
-                    <div class="row hero__cards position-relative">
+                    <div class="row hero__cards position-relative  wow animate__fadeInRight" data-wow-duration="2s"
+                    data-wow-offset="70">
 
                         <div class="col-sm-6 col-lg-4 col-md-6 hero__card--box">
                             <div class="card" >
@@ -169,7 +180,8 @@
                 <a href="#" class="link link__title link__title-left">features</a>
 
 
-                <div class="row features__content">
+                <div class="row features__content wow animate__rollIn"  data-wow-duration="2s"
+                data-wow-offset="100">
                     
                     <div class="col-sm-12 col-md-6 px-5 d-flex flex-column justify-content-evenly align-items-center">
                         <h1 class="heading heading-white heading-1 features__heading">Our people make
@@ -206,16 +218,17 @@
                                 </div>
                             </div>
                          </div>
-
                     </div>
+                    
                 </div>
                 </div>
 
-                <div class="container position-relative features__row">
+                <div class="container position-relative features__row" >
                     
                     <a href="#" class="link link__title link__title-right">features</a>
 
-                    <div class="row features__content">
+                    <div class="row features__content wow animate__jackInTheBox"   data-wow-duration="2s"
+                    data-wow-offset="150">
 
                         <div class="col-sm-12 col-md-6">
                             <div class="row features__cards position-relative">
@@ -267,7 +280,8 @@
                     <div class="container position-relative features__row">
                         <a href="#" class="link link__title link__title-left">features</a>
 
-                        <div class="row features__content">
+                        <div class="row features__content wow animate__flipInX" data-wow-duration="2s"
+                        data-wow-offset="150">
                             <div class="col-sm-12 col-md-6 px-5 d-flex flex-column justify-content-evenly align-items-center">
                                 <h1 class="heading heading-white heading-1 features__heading">Deliver instant answers
                                     with knowledge base.</h1>
@@ -317,7 +331,8 @@
 
         <section class="partners position-relative d-flex align-items-center justify-content-center">
             <a href="#" class="link link__title link__title-center">partners</a>
-            <div class="container">
+            <div class="container wow animate__rubberBand" data-wow-duration="2s"
+            data-wow-offset="150" >
                 <h3 class="heading heading-3 text-center mt-5">Trusted by more than 5,000 businesses in 122 countries.</h3>
                 <div class="row partners__brands py-5 mt-5">
                     <div class="col-6 col-sm-4 col-md-2 partners__brand">
@@ -343,7 +358,8 @@
         </section>
 
         <section class="QA position-relative d-flex align-items-center justify-content-center">
-            <div class="container">
+            <div class="container wow animate__fadeInUp" data-wow-duration="2s"
+            data-wow-offset="150">
                 <a href="#" class="link link__title link__title-center">Q&A</a>
                 <h2 class="heading heading-2 text-center mt-5">What you should know</h2>
                 <p class="paragraph paragraph-md mt-5 text-center">Check out the key features of our template. They can help you create your first-class project.</p>
@@ -487,6 +503,12 @@
 
 
 <script src="index.js"></script>
+
+<!-- wow script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
 </body>
 

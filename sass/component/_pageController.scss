@@ -5,13 +5,7 @@
     position: absolute;
     top: 2rem;
     transition: all 0.2s;
-  }
-
-  &:hover {
-    i {
-      color: $ligthBlack;
-      transform: rotate(360deg);
-    }
+    z-index: 20;
   }
 
   i {
@@ -19,11 +13,19 @@
     cursor: pointer;
     transition: all 0.2s;
   }
+
   &__close {
     right: 10rem;
   }
 
   &__back {
     left: 10rem;
+  }
+
+  &:hover {
+    i {
+      color: $ligthBlack;
+      transform: rotate(360deg);
+    }
   }
 }

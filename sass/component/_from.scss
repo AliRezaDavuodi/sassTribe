@@ -1,9 +1,9 @@
 .form {
-  width: 100%;
-  display: flex;
+  @include flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+
+  width: 100%;
   margin-top: 2rem;
 
   &__form {
@@ -21,8 +21,7 @@
     }
 
     &--check {
-      display: flex;
-      align-items: center;
+      @include flex;
     }
   }
 
@@ -31,7 +30,7 @@
     border: 0;
     padding-left: 1rem;
     font-size: 2rem;
-    font-family: $montserrat;
+    font-family: inherit;
     color: $colorPrimary;
     background-color: $colorPrimary-light2;
     border-radius: 0.3rem;
@@ -51,21 +50,20 @@
   }
 
   &__label {
-    position: absolute;
-    font-size: 1.6rem;
-    color: $colorPrimary;
     font-size: 2rem;
-    font-family: $montserrat;
+    color: $colorPrimary;
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     left: 1rem;
     transition: all 0.5s;
+    transform: translateY(-50%);
   }
 
   &__input--checkbox {
     display: none;
 
     &:checked + .myCheck {
+      transform: rotate(360deg);
       &::after {
         transform: scale(1);
       }
@@ -74,7 +72,6 @@
 
   &__label--checkbox {
     font-size: 2rem;
-    font-family: $montserrat;
     color: $ligthBlack;
     margin-left: 1rem;
     cursor: pointer;
@@ -82,18 +79,17 @@
 
   &__btn {
     margin: 2rem 0;
+    padding: 1rem 3rem;
     border: none;
     background-color: $colorPrimary;
-    width: 100%;
     color: $white;
-    padding: 1rem 3rem;
+    width: 100%;
     display: inline-block;
     border-radius: 0.6rem;
-    transition: all 0.3s;
     box-shadow: 0 1rem 2rem rgba($dark, 0.2);
     font-size: 1.8rem;
-    font-family: $montserrat;
     text-transform: capitalize;
+    transition: all 0.3s;
 
     &:focus {
       outline: none;
@@ -110,7 +106,7 @@
 
   &__another-way {
     margin-top: 2rem;
-    font-size: 1.55rem;
+    font-size: 1.5rem;
     display: inline-block;
     color: $ligthBlack;
 

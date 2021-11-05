@@ -1,4 +1,7 @@
 .darkmode {
+  @include flex;
+  justify-content: center;
+
   width: 5rem;
   height: 5rem;
   position: fixed;
@@ -7,45 +10,22 @@
   bottom: 3rem;
   background-color: $colorPrimary;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
   z-index: 20;
-  align-items: center;
   transition: all 0.3s;
-
-  i {
-    cursor: pointer;
-  }
+  cursor: pointer;
 }
 
-.animatedDark {
+// create an animation for dark mode btn
+.animatedBtn {
   animation: moveUp 1s ease forwards;
 }
 
-@keyframes moveUp {
-  0% {
-    transform: translate(0, 0) scale(1) rotate(0);
-  }
-  20% {
-    transform: translate(0, -10rem) scale(1) rotate(0);
-  }
-  40% {
-    transform: translate(0, -10rem) scale(1.4) rotate(45deg);
-  }
-  60% {
-    transform: translate(0, -10rem) scale(1.4) rotate(-45deg);
-  }
-  80% {
-    transform: translate(0, -10rem) scale(1.4) rotate(0deg);
-  }
-  100% {
-    transform: translate(0, 0) scale(1) rotate(0deg);
-  }
-}
-
+// switch to dark mode
 .dark {
   filter: invert(1) hue-rotate(180deg);
 }
+
+// fixed picturs in dark mode
 .nodark {
   filter: invert(1) hue-rotate(180deg);
 }

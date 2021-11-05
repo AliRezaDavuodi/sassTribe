@@ -18,6 +18,11 @@
   }
 }
 
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
 @mixin respond($bp) {
   @if $bp == sm {
     // 767px
